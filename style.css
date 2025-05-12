@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css2?family=Neuton:wght@100;200;300;400;500;600;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neuton", serif;
+}
+body {
+  height: 100vh;
+  background-color: #e98f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 85%;
+  height: 87%;
+  background-color: #0f1225;
+  border-radius: 40px;
+  border: 1px solid #000000;
+  filter: drop-shadow(0 0 0.75rem #0f1225); /*shadow pour div container*/
+  position: relative;
+  overflow: hidden;
+}
+
+.rond1,
+.rond2,
+.rond3 {
+  background-color: #c83939;
+  /* filter: drop-shadow(0 0 2.6rem #C83939);*/
+  opacity: 0.5;
+  filter: blur(5.5em);
+  width: 24%;
+  aspect-ratio: 1 / 1; /* Garde la même largeur et hauteur */
+  border-radius: 50%;
+  position: absolute;
+}
+.rond1 {
+  top: -12px;
+  left: -12px;
+}
+.rond2 {
+  top: -210px;
+  left: 800px;
+}
+.rond3 {
+  top: 490px;
+  left: 1010px;
+}
+#console1 {
+  transform: rotate(-60deg);
+  position: absolute;
+  width: 130%;
+  
+  left: 375px;
+  top: 20px;
+  filter: drop-shadow(0 0 0.75rem #0f1225);
+  opacity: 0.5;
+  mix-blend-mode: soft-light;
+}
+.red-rec {
+  position: absolute;
+  width: 35%;
+  height: 81%;
+  background-color: #c83939;
+  border-radius: 35px;
+  left: 100px;
+  top: 70px;
+}
+
+h1 {
+  transform: rotate(-90deg);
+  font-weight: bold;
+  font-size: 110px;
+  letter-spacing: 2px;
+  position: absolute;
+  color: #ffffff;
+  top: 250px;
+}
+#g1 {
+  opacity: 0.9;
+  left: 240px;
+  
+}
+#g2 {
+  left: 137px;
+  opacity: 0.6;
+}
+#g3 {
+  left: 36px;
+  opacity: 0.3;
+}
+#g4 {
+  opacity: 0.1;
+  left: -70px;
+}
+.bleu-rec {
+  border-radius: 35px;
+  position: absolute;
+  width: 845px;
+  height: 420px;
+ 
+  left: 355px;
+  top: 97px;
+  background: linear-gradient(
+    to right,
+    rgba(15, 18, 37, 0.4),/*left*/
+    rgba(15, 22, 65, 0.8) /*right*/
+  );
+  
+  backdrop-filter: blur(20px); /*  floute l’arrière-plan */
+}
+#console2{
+    width: 75%;
+    position: absolute;
+    left: -120px;
+    top: 10px;
+    filter: drop-shadow(0 0 0.75rem #0f1225);
+}
+.cons-name{
+  position: absolute;
+  left: 300px;
+    top: 10px;
+    font-family: 'Poppins', sans-serif;
+    transform: rotate(360deg);
+    font-size: 69px;
+}
+h2{
+    position: absolute;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 35px;
+  font-weight:normal;
+  top: 100px;
+  left: 300px;
+}
+h3{
+    position: absolute;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    font-size: 59px;
+    font-weight: 500;
+    top: 180px;
+    left: 300px;
+}
+
+p{
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  position: absolute;
+  left: 300px;
+  top: 260px;
+  font-size: 37px;
+}
+.red, .blue, .green, .yellow{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  
+  top: 275px;
+}
+.red{
+background-color: #C74A52;
+left: 430px;
+}
+.blue{
+background-color: #408DD4;
+left: 490px;
+}
+.green{
+background-color: #99D959;
+left: 550px;
+}
+.yellow{
+background-color: #ECC127;
+left: 610px;
+}
+.Description{
+  position: absolute;
+  
+  top: 310px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+}
+.wishlist{
+  position: absolute;
+  top: 360px;
+  left: 550px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  filter: drop-shadow(0 0 2rem #BB3138);
+  color: white;
+  background-color: #BB3138;
+  width: 125px;
+  border: 2px solid #CF474E;
+  border-radius: 35px;
+  text-align: center;
+  padding: 15px;
+
+}
+#like{
+  position: absolute;
+  top: 360px;
+  left: 490px;
+}
+
+.animate__swing {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: swing; 
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+}
